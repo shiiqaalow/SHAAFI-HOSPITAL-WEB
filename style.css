@@ -62,6 +62,14 @@ header {
     cursor: pointer;
 }
 
+#twitter,#fb {
+    color: #0966b8;
+}
+
+.social-media :nth-child(1) {
+    color: black;
+}
+
 i {
     color: #356eca;
 }
