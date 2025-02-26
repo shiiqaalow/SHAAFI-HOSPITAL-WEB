@@ -16,48 +16,6 @@ body {
     margin-inline: auto;
 }
 
-.mobile {
-    display: none;
-}
-.hamburger {
-    display: none;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 1rem 2rem;
-}
-
-nav a{
-    text-decoration: none;
-    margin-inline: .5rem;
-    color: black;
-}
-
-nav a:hover {
-    color: #356eca;
-}
-
-.our-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    margin-inline: 2rem;
-    font-size: .8rem;
-}
-.our-info a {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-i {
-    color: #356eca;
-}
-
  img {
     width: 100%;
 }
@@ -69,32 +27,73 @@ i {
 }
 
 .menu {
+    padding: 1rem 0;
+    height: 5rem;
+    position: fixed;
+    width: 90%;
+}
+
+.our-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.our-info :nth-child(1) {
+    display: flex;
+    gap: 2rem;
+}
+
+.our-info :nth-child(2) {
+    display: flex;
+    gap: .5rem;
+}
+
+
+.our-info a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+i {
+    color: #356eca;
+}
+
+
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 4rem;
-    margin-inline: 3rem;
 }
-.menu h1 {
+
+.logo h1 {
     color: #356eca;
     font-size: 2.5rem;
 }
 
-.menu h1 span {
+.logo h1 span {
     color: black;
 }
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
 
-.menu a {
+.navigation li {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.navigation a {
     text-decoration: none;
-    margin-inline: -1rem;
-    font-size: 1.2rem;
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 
-.menu a:hover {
-    color: #356eca;
-    border-bottom:#356eca;
-}
+
+
 
 .btn {
     color: #fff;
@@ -107,6 +106,17 @@ i {
 .btn2:hover {
     background-color: #292828;
     transition:  350ms ease-in-out;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+}
+.mobile {
+    display: none;
+}
+.hamburger {
+    display: none;
 }
 
 .hero {
@@ -263,6 +273,40 @@ i {
     background-color: #fff;
     color: #1389f0;
 }
+
+
+.content4-image {
+    background: linear-gradient(rgba(56, 102, 183, 0.8), rgba(113, 161, 244,0.7)),
+    url("https://tse4.mm.bing.net/th?id=OIP.gCzXM_tn6YriK_LO7sh9tAHaE8&pid=Api&P=0&h=180") center/cover no-repeat;
+}
+
+.content4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content4-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-block: 3rem;
+    color: #fff;
+}
+
+.content4-btn .btn:hover {
+   background-color: #fff;
+   color: #1389f0;
+}
+
+.content4-btn i {
+    color: #fff;
+    margin-left: .5rem;
+}
+
+
 
 @media  (max-width: 768px) {
 
