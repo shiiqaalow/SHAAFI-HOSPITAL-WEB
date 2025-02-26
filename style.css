@@ -465,6 +465,8 @@ i {
         margin-bottom: 1rem;
         display: flex;
         flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
     .our-info .social-media {
