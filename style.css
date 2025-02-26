@@ -130,6 +130,11 @@ i {
 .btn:hover, 
 .btn2:hover {
     background-color: #292828;
+    transition-delay: 0.5s;
+    box-shadow: 0 0 10px #1389f0,
+    0 0 20px #1389f0,
+    0 0 40px #1389f0;
+    border-radius: 5px;
 }
 
 .btn {
@@ -142,11 +147,36 @@ i {
     position: relative;
 }
 
+.btn ::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    /* border-top: 2px solid black; */
+    /* border-left: 2px solid black; */
+    transition: 0.9s;
+}
+
 .btn ::after {
     content: "";
     position: absolute;
-    
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    /* border-bottom: 2px solid black; */
+    /* border-right: 2px solid black; */
+    transition: 0.5s;
 }
+
+.btn:hover::before,
+.btn:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
 
 .mobile {
     display: none;
@@ -182,6 +212,7 @@ i {
     background-color: #356eca;
     padding: .7rem 2em;
     border-radius: .5rem;
+    border: none;
 }
 
 .hero button {
