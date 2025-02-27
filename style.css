@@ -82,6 +82,9 @@ i {
     justify-content: space-between;
     align-items: center;
 }
+.logo img {
+    width: 180px;
+}
 
 .logo h1 {
     color: #356eca;
@@ -426,6 +429,45 @@ i {
     display: block;
 }
 
+                    /*Contact page  */
+ 
+.contact-hero {
+    background: linear-gradient(rgba(37, 222, 182, 0.5), rgba(218, 71, 18, 0.3)),
+    url("https://tse3.mm.bing.net/th?id=OIP.zZz72mPv-zsOXn2tY85VQAHaEK&pid=Api&P=0&h=180") top/cover no-repeat;
+    height: 100vh;
+    background-attachment: fixed; 
+}   
+
+.contact-hero .hero-tittle  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 4rem;
+   color: #fff;
+   padding-top: 20rem;
+     
+}
+
+.contact {
+    margin-block: 4rem ;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    gap: 2rem;
+    line-height: 2rem;
+}
+
+.contact-info i {
+    font-size: 3rem;
+}
+
+.contact span {
+    display: block;
+}
 
 
 @media  (max-width: 992px)  {
