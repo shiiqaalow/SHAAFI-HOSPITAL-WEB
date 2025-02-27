@@ -226,7 +226,7 @@ i {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 3.8rem;
     padding-top: 4rem;
 }
 
@@ -236,8 +236,9 @@ i {
 
 .hero p {
     color: black;
-    font-size: 1rem;
+    font-size: 1.7rem;
     font-weight: 300;
+    margin-top: 4rem;
 }
 
 .btn2 {
@@ -249,7 +250,7 @@ i {
 }
 
 .hero button {
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 
 .grid {
@@ -425,6 +426,7 @@ i {
 
     .toggle-bar {
         display: block;
+        font-size: 1.7rem;
     }
 
     .nav-bar :nth-child(1) {
@@ -448,7 +450,7 @@ i {
 
     .hero p {
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.5rem;
         margin-top: 5rem;
     }
 
@@ -526,11 +528,11 @@ i {
     }
 
     .hero h1 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .hero p {
-        /* display: none; */
+        font-size: 2rem;
     }
     .hero-btns {
         margin-top: 1rem;
