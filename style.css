@@ -408,6 +408,25 @@ i {
 }
 
 
+/* styling blog page */
+
+.grid-blogs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.social-media {
+    display: block;
+}
+
+
 
 @media  (max-width: 992px)  {
     .nav-bar :nth-child(3),
@@ -450,8 +469,8 @@ i {
 
     .hero p {
         text-align: center;
-        font-size: 1.5rem;
-        margin-top: 5rem;
+        font-size: 1.3rem;
+        margin-top: 3rem;
     }
 
     .hero-btns {
@@ -460,7 +479,7 @@ i {
         justify-content: center;
         align-items: center;
         gap: .5rem;
-        margin-top: 3rem;
+        margin-top: 2rem;
 
     } 
 
