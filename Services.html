@@ -13,6 +13,7 @@
   </head>
   <body>
     <header>
+
       <nav class="menu">
         <div class="our-info">
             <div class="social-media">
@@ -30,27 +31,28 @@
             </div>
           </div>  
 
-
-        <div class="nav-bar">
-          <div class="logo">
-            <h1><i class="fa-solid fa-kit-medical"></i> SHA <span>AFI</span></h1>
-          </div>
-  
-          <ul class="navigation">
-            <li> <a href="index.html">Home</a></li>
-            <li> <a href="Doctors.html">Doctors</a></li>
-            <li> <a href="Services.html">Services</a></li>
-            <li> <a href="About.html">About</a></li>
-            <li> <a href="Blog.html">Blog</a></li>
-            <li> <a href="Contact.html">Contact</a></li>
-          </ul>
-          <button class="btn"><a href="">Book Apoinment</a></button>
+      <div class="nav-bar">
+        <div class="logo">
+          <h1><i class="fa-solid fa-kit-medical"></i> SHA <span>AFI</span></h1>
         </div>
-       <div class="toggle-bar">
-        <i class="fa-solid fa-bars"></i>
-       </div>
 
-       <div class="mobile-menu">
+        <ul class="navigation">
+          <li> <a href="index.html">Home</a></li>
+          <li> <a href="Doctors.html">Doctors</a></li>
+          <li> <a href="Services.html">Services</a></li>
+          <li> <a href="About.html">About</a></li>
+          <li> <a href="Blog.html">Blog</a></li>
+          <li> <a href="Contact.html">Contact</a></li>
+        </ul>
+        <button class="btn"><a href="">Book Apoinment</a></button>
+      </div>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars" data-visible="true"></i>
+        <i class="fa-solid fa-close" data-visible="false"></i>
+      </div>
+
+      <div class="mobile-menu" data-visible="false">
+        <ul class="navigation">
         <li> <a href="index.html">Home</a></li>
         <li> <a href="Doctors.html">Doctors</a></li>
         <li> <a href="Services.html">Services</a></li>
@@ -58,9 +60,11 @@
         <li> <a href="Blog.html">Blog</a></li>
         <li> <a href="Contact.html">Contact</a></li>
         <li><a href="" class="btn">Book Apoinment</a></li>
+        </ul>
        </div>
-      </nav>
+       </nav>
     </header>
+
 
        
     <div class="container">
@@ -332,5 +336,27 @@
         </div>
       </div>
     </section> -->
+ 
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const icons = document.querySelectorAll("i");
+
+      hamburger.addEventListener("click", function (event) {
+        const isVisible = mobileMenu.getAttribute("data-visible");
+        if (isVisible == "true") {
+          // qari hiding
+          mobileMenu.setAttribute("data-visible", "false");
+          icons[0].setAttribute("data-visible", "true");
+          icons[1].setAttribute("data-visible", "false");
+        } else if (isVisible == "false") {
+          // soo bandhig showing
+          mobileMenu.setAttribute("data-visible", "true");
+          icons[0].setAttribute("data-visible", "false");
+          icons[1].setAttribute("data-visible", "true");
+        }
+      });
+    </script>
+ 
   </body>
 </html>
