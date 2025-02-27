@@ -528,14 +528,18 @@ i {
     }
 
     .hero h1 {
-        font-size: 4rem;
+        font-size: 2,5rem;
     }
 
     .hero p {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .hero-btns {
-        margin-top: 1rem;
+        margin-top: .3rem;
+    }
+
+    .hero-btns :nth-child(1) {
+        margin-top: -.1rem;
     }
 
     .grid {
