@@ -657,6 +657,31 @@ i {
         flex-direction: column;
     }
 
+    .contact-hero {
+        overflow: hidden;
+        height: 80vh;
+    }
+
+    .hero-tittle h1 {
+        font-size: 5rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .form {
+        display: flex;
+        margin-inline: auto;
+    }
 }
 
 
@@ -714,5 +739,18 @@ i {
         text-align: center;
         font-size: 1rem;
     }
+
+    /* .contact-grid {
+        grid-template-columns: 1fr;
+    } */
+
+    /* .contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    } */
+
 
 }
