@@ -709,6 +709,33 @@ iframe {
     gap: 1rem;
     line-height: 1.5rem;
 }
+
+footer {
+    background: linear-gradient(rgba(57, 10, 150, 0.5), rgba(33, 95, 129, 0.3));
+    height: 150px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 3rem;
+}
+
+.footer span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1389f0;
+    margin-left: 1.5rem;
+}
+
+.footer img {
+    display: block;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: -4rem;
+    margin-left: 3rem;
+}
 @media  (max-width: 992px)  {
 
     /* .hamburger {
@@ -858,6 +885,10 @@ iframe {
         text-align: center;
     }
 
+    iframe {
+        width: 100%;
+    }
+
     .form {
         display: flex;
         margin-inline: auto;
@@ -866,7 +897,29 @@ iframe {
     .form-info {
         font-size: .8rem;
     }
+
+    .about-us {
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+    
+    .about-us .discription {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-block: 2rem;
+        gap: 3rem;
+    }
+
+    .footer {
+        font-size: .7rem;
+        height: 100%;
+    }
 }
+
+
+
 
 
 @media  (max-width: 480px) {
@@ -928,5 +981,17 @@ iframe {
       margin: 0 3rem;
     }
 
+    .footer h2 {
+        font-size: 1.2rem;
+        text-align: center;
+        /* height: 100%; */
+    }
+
+    .footer span {
+        font-size: 1.1rem;
+        text-align: center;
+        line-height: 2rem;
+        height: 100%;
+    }
 
 }
