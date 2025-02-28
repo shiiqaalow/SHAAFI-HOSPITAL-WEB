@@ -28,9 +28,11 @@ body {
 
 
 header {
+    background-color: transparent;
     position: relative;
     padding: 0 2rem;
     height: 6rem;
+    z-index: 1;
 }
 
 .menu {
@@ -81,9 +83,9 @@ i {
     justify-content: space-between;
     align-items: center;
 }
-.logo img {
+/* .logo img {
     width: 180px;
-}
+} */
 
 .logo h1 {
     color: #356eca;
@@ -106,7 +108,9 @@ i {
 
 .navigation a {
     text-decoration: none;
-    color: black;
+    color: #0e0a08;
+    font-weight: 600;
+    font-size: 1.3rem;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -141,14 +145,14 @@ i {
 }
 
 .btn:hover, 
-.btn2:hover {
+.hero-btn:hover {
     background-color: #292828;
-    transition-delay: 0.5s;
+    transition-delay: 0.1s;
     box-shadow: 0 0 10px #1389f0,
     0 0 20px #1389f0,
     0 0 40px #1389f0;
-    border-radius: 5px;
-}
+    border-radius: 1rem;
+}  
 
 .btn {
     color: #fff;
@@ -177,7 +181,6 @@ i {
     right: 0;
     width: 10px;
     height: 10px;
-
     transition: 0.5s;
 }
 
@@ -187,72 +190,6 @@ i {
     height: 100%;
 } 
 
-/* header {
-    background-color: #fafaf6;
-    height: 4.5rem;
-    position:sticky;
-    top: 0;
-} */
-
-/* .desktop-menu {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.menus-link {
-    display: flex;
-    gap: 20px;
-}
-
-
-.menus-link li {
-    list-style: none;
-}
-
-.menus-link li a {
-    text-decoration: none;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #2b2b2b;
-}
-
-.menus-link li a:hover {
-    color: #5f6ad4;
-}
-
-.desktop-menu h1 {
-    font-size: 1.5625rem;
-    font-weight: 700;
-
-} */
-
-/* .mobile-menu-actions {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 80%;
-}
-
-.btn-primary, .btn-secondary {
-    display: inline-block;
-    background-color: #5f6ad4;
-    color: #fff;
-    padding: 20px;
-    margin: 5px;
-    border-radius: 5px;
-    border: none;
-    font-size: 1.5rem;
-
-}
-
-.btn-secondary {
-    background-color: transparent;
-    border: 1px solid #fff;
-} */
-
 
 .mobile-menu {
     display: none;
@@ -262,62 +199,44 @@ i {
     display: none;
 }
 
-/* 
-.mobile-menu {
-    display: none;
-    position: absolute;
-    right: 3rem;
-    top: 65px;
-    height: 0;
-    width: 300px;
-    background: rgba(255, 255, 255, .3);
-    border-radius: 1rem;
-    backdrop-filter: blur(15px);
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.mobile-menu li {
-    list-style: none;
-    padding: .1rem 2rem;
-}
-
-.mobile-menu a {
-    text-decoration: none;
-    padding: .5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hamburger {
-    display: none;
-    position: absolute;
-    top: 55%;
-    right: 2%;
-    font-size: 2rem;
-} */
 
 .hero {
-    background: url("https://mobirise.com/extensions/retreatm5/outdoor-yoga-classes/assets/images/pexels-natalie-3759660.jpg") center / cover no-repeat;
-    height: calc(100vh - 5rem)
-
+    position: relative;
+    overflow: hidden;
 }
 
-.hero h1 {
-    font-size: 3.8rem;
-    padding-top: 4rem;
+video {
+    position: relative;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
 }
+
+.hero-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8rem;
+    position: absolute;
+    top: 0;
+    font-size: 3em;
+}
+
 
 .hero h1 span {
     color: #356eca;
 }
 
-.hero p {
-    color: black;
-    font-size: 1.7rem;
-    font-weight: 300;
-    margin-top: 4rem;
+.hero-btn {
+    padding: 1.5rem 5rem;
+    background-color: #09b8b5;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1rem;
+ 
 }
 
 .btn2 {
@@ -326,11 +245,9 @@ i {
     padding: .7rem 2em;
     border-radius: .5rem;
     border: none;
+    /* margin-top: 3rem; */
 }
 
-.hero button {
-    margin-top: 3rem;
-}
 
 .grid {
     display: grid;
@@ -487,23 +404,10 @@ i {
 }
 
 
-/* styling blog page */
-
-.grid-blogs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 5rem;
-}
-
-.blog {
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
-}
-
+/* 
 .social-media {
     display: block;
-}
+} */
 
                     /*Contact page  */
  
@@ -927,35 +831,24 @@ footer {
     width: 100%;
 }
 
-    .hero {
-        width: 100%;
-        height: 100vh;
+.hero {
+    height: 100vh;
+}
+
+    video {
+        height: 100%;
+        /* overflow: hidden; */
     }
     
 
-    .hero h1 {
-        font-size: 2.5rem;
-        text-align: center;
+    .hero-tittle :nth-child(1) {
+        font-size: 3rem;
+        margin-top: -5rem;
     }
 
-    .hero p {
-        text-align: center;
-        font-size: 1.3rem;
-        margin-top: 3rem;
-    }
 
-    .hero-btns {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: .5rem;
-        margin-top: 2rem;
-
-    } 
-
-    .hero-btns .btn2 {
-        width: auto;
+    .hero-tittle :nth-child(2) {
+        padding: 1.5rem 3rem;
     }
 
     .grid {
@@ -1087,23 +980,10 @@ footer {
         margin-top: .4rem;
     }
 
-
-    .hero {
-        width: 100%;
-        height: 100vh;
+    .hero-tittle :nth-child(1){
+      padding-right: -5rem;
     }
 
-    .hero h1 {
-        font-size: 2,5rem;
-    }
-
-    .hero p {
-        font-size: 1.5rem;
-    }
-    .hero-btns {
-        margin-top: .3rem;
-    }
-    
     .grid {
         grid-template-columns: 1fr;
     }
