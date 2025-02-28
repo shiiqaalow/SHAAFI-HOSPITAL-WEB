@@ -994,13 +994,13 @@ footer {
 
     .form-info {
         display: flex;
-        width: 265px;
+        /* width: 265px; */
         gap: 1rem;
         text-wrap: nowrap;
      }
 
      .form-info :nth-child(1) {
-        width: 130px;
+        width: 135px;
      }
     
 }
