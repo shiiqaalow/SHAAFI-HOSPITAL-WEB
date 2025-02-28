@@ -550,6 +550,11 @@ i {
     grid-template-columns: 1fr 1fr;
 }
 
+.form-bg {
+    background: linear-gradient(rgba(128, 130, 129, 0.5), rgba(125, 145, 105, 0.3)),
+    url("https://tse1.mm.bing.net/th?id=OIP.seQGDfWLH_8rm7Uwr0JS9wHaE7&pid=Api&P=0&h=180") right/cover no-repeat;
+}
+
 .form {
     margin-top: 4rem;
     background-color: gray;
@@ -651,6 +656,12 @@ i {
     background-color: #3bbbe2;
 }
 
+
+iframe {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5rem;
+}
 @media  (max-width: 992px)  {
 
     /* .hamburger {
@@ -804,6 +815,10 @@ i {
         display: flex;
         margin-inline: auto;
     }
+
+    .form-info {
+        font-size: .8rem;
+    }
 }
 
 
@@ -859,17 +874,12 @@ i {
         font-size: 1rem;
     }
 
-    /* .contact-grid {
+    .contact-grid {
         grid-template-columns: 1fr;
-    } */
-
-    /* .contact-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    } */
+    }
+    .contact-info {
+      margin: 0 3rem;
+    }
 
 
 }
