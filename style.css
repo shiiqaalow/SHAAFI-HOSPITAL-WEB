@@ -810,7 +810,48 @@ footer {
     color: #fff;
     padding-top: 20rem;
                       
-}                
+}  
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-block: 5rem;
+}
+
+.few-words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.few-words .discription {
+    line-height: 2rem;
+}
+
+.few-words span {
+    color: #7bd77b;
+    font-weight: 600;
+}
+
+.about-bg {
+    background: linear-gradient(rgba(15, 16, 72, 0.5), rgba(35, 13, 133, 0.3)),
+    url("https://tse1.mm.bing.net/th?id=OIP.sGkvsSn3lf-Sgw7nHHuBJwHaEK&pid=Api&P=0&h=180") top /cover no-repeat;
+    width: 90%;
+    height: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    color: #fff;
+    border-radius: 2rem;
+    font-size: 2rem;
+} 
+
+.about-bg p,span {
+    font-size: 1.5rem;
+}
 @media  (max-width: 992px)  {
 
     /* .hamburger {
