@@ -995,11 +995,9 @@ footer {
 
     .form-info {
         display: flex;
-        width: 100%;
+        /* width: 100%; */
         gap: .5rem;
-     }
-     .form-info label input {
         text-wrap: nowrap;
      }
-
+    
 }
