@@ -790,7 +790,27 @@ footer {
 .doctors-info :nth-child(4) {
     color: #7bd77b;
 }
+
+
+                /* ABOUT PAGE */
  
+
+.about-hero {
+    background: linear-gradient(rgba(37, 222, 182, 0.5), rgba(218, 71, 18, 0.3)),
+    url("https://tse2.mm.bing.net/th?id=OIP.pVHhseocEPrphqzYcnIuMQHaDV&pid=Api&P=0&h=180") top/cover no-repeat;
+    height: 100vh;
+    background-attachment: fixed; 
+} 
+                
+.about-hero .hero-tittle  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #fff;
+    padding-top: 20rem;
+                      
+}                
 @media  (max-width: 992px)  {
 
     /* .hamburger {
