@@ -796,8 +796,8 @@ footer {
  
 
 .about-hero {
-    background: linear-gradient(rgba(37, 222, 182, 0.5), rgba(218, 71, 18, 0.3)),
-    url("https://tse2.mm.bing.net/th?id=OIP.pVHhseocEPrphqzYcnIuMQHaDV&pid=Api&P=0&h=180") top/cover no-repeat;
+    background: linear-gradient(rgba(161, 200, 33, 0.5), rgba(53, 177, 222, 0.3)),
+    url("https://tse1.mm.bing.net/th?id=OIP.ci5gQD7xgOkGCrq7Ldf01AHaE7&pid=Api&P=0&h=180") top/cover no-repeat;
     height: 100vh;
     background-attachment: fixed; 
 } 
@@ -833,6 +833,7 @@ footer {
 .few-words span {
     color: #7bd77b;
     font-weight: 600;
+    font-size: 1.5rem;
 }
 
 .about-bg {
@@ -849,7 +850,7 @@ footer {
     font-size: 2rem;
 } 
 
-.about-bg p,span {
+.about-bg p {
     font-size: 1.5rem;
 }
 @media  (max-width: 992px)  {
@@ -1046,6 +1047,15 @@ footer {
 
     .doctors-grid {
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .about-bg {
+        width: 100%;
     }
 }
 
