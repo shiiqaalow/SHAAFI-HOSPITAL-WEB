@@ -680,9 +680,34 @@ iframe {
 
 }
 
+.department {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.department a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
 .about-us .logo h1 {
     padding: .5rem 2rem;
     font-size: 3em;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    line-height: 1.5rem;
 }
 @media  (max-width: 992px)  {
 
