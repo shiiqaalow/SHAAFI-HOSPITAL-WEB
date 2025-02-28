@@ -998,5 +998,9 @@ footer {
         gap: .5rem;
         text-wrap: nowrap;
      }
+
+     .form-info :nth-child(1) {
+        width: 126px;
+     }
     
 }
