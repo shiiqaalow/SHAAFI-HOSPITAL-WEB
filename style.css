@@ -736,6 +736,52 @@ footer {
     margin-bottom: -4rem;
     margin-left: 3rem;
 }
+
+
+            /*DOCTORS PAGE  */  
+
+.Doctors-hero {
+    background: linear-gradient(rgba(37, 222, 182, 0.5), rgba(218, 71, 18, 0.3)),
+    url("https://tse2.mm.bing.net/th?id=OIP.pVHhseocEPrphqzYcnIuMQHaDV&pid=Api&P=0&h=180") top/cover no-repeat;
+    height: 100vh;
+    background-attachment: fixed; 
+} 
+
+.Doctors-hero .hero-tittle  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #fff;
+    padding-top: 20rem;
+      
+ }
+
+ .doctors-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-block: 5rem;
+    gap: 2rem;
+ }
+
+.doctors-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.doctors-info :nth-child(3) {
+    color: #ba7c11;
+}
+ 
+
+.doctors-info :nth-child(4) {
+    color: #7bd77b;
+}
+ 
 @media  (max-width: 992px)  {
 
     /* .hamburger {
@@ -927,6 +973,10 @@ footer {
     .footer h2 {
         font-size: 1.5rem;
     }
+
+    .doctors-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 
 
@@ -1002,5 +1052,10 @@ footer {
      .form-info :nth-child(1) {
         width: 135px;
      }
-    
+
+     .doctors-grid {
+        grid-template-columns: 1fr;
+    }
 }
+    
+
