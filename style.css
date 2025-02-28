@@ -995,7 +995,7 @@ footer {
 
     .form-info {
         display: flex;
-        /* width: 100%; */
+        width: 265px;
         gap: .5rem;
         text-wrap: nowrap;
      }
