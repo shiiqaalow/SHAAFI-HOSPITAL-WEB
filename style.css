@@ -662,6 +662,13 @@ iframe {
     overflow: hidden;
     margin-top: 5rem;
 }
+
+.about-us {
+    background: linear-gradient(rgba(37, 222, 182, 0.5), rgba(218, 71, 18, 0.3)),
+    url("https://tse3.mm.bing.net/th?id=OIP.zZz72mPv-zsOXn2tY85VQAHaEK&pid=Api&P=0&h=180") top/cover no-repeat;
+    height: 100vh;
+
+}   
 @media  (max-width: 992px)  {
 
     /* .hamburger {
