@@ -997,9 +997,10 @@ footer {
         display: flex;
         width: 100%;
         gap: .5rem;
+        text-wrap: nowrap;
      }
      .form-info label input {
-        width: 100%;
+        text-wrap: nowrap;
      }
 
 }
