@@ -664,11 +664,26 @@ iframe {
 }
 
 .about-us {
-    background: linear-gradient(rgba(37, 222, 182, 0.5), rgba(218, 71, 18, 0.3)),
-    url("https://tse3.mm.bing.net/th?id=OIP.zZz72mPv-zsOXn2tY85VQAHaEK&pid=Api&P=0&h=180") top/cover no-repeat;
+    background: linear-gradient(rgba(37, 222, 182, 0.5), rgba(218, 71, 18, 0.3));
+    /* url("https://tse3.mm.bing.net/th?id=OIP.zZz72mPv-zsOXn2tY85VQAHaEK&pid=Api&P=0&h=180") top/cover no-repeat; */
     height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
 
-}   
+.about-us .discription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    gap: 1rem;
+
+}
+
+.about-us .logo h1 {
+    padding: .5rem 2rem;
+    font-size: 3em;
+}
 @media  (max-width: 992px)  {
 
     /* .hamburger {
