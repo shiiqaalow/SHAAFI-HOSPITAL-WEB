@@ -706,15 +706,16 @@ footer {
     background-attachment: fixed; 
 } 
                 
-.about-hero .hero-tittle  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-hero .hero-tittle, .Doctors-hero .hero-tittle, .contact-hero .hero-tittle, .Services-hero .hero-tittle   {
     font-size: 4rem;
     color: #fff;
-    padding-top: 20rem;
+    margin-top: 5rem;
+    width: 100%;
+    height: 100%;
                       
 }  
+
+
 
 .about-grid {
     display: grid;
@@ -757,10 +758,6 @@ footer {
 .about-bg p {
     font-size: 1.5rem;
 }
-
-/* MObile responsve  */
-
-/*  */
 
 
 @media  (max-width: 992px)  {
@@ -886,9 +883,6 @@ footer {
         height: 80vh;
     }
 
-    .hero-tittle h1 {
-        font-size: 5rem;
-    }
 
     .contact-grid {
         grid-template-columns: 1fr;
@@ -945,9 +939,12 @@ footer {
         font-size: 1.5rem;
     }
 
+
     .doctors-grid {
         grid-template-columns: repeat(2,1fr);
     }
+
+
 
     .about-grid {
         grid-template-columns: 1fr;
