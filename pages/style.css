@@ -245,7 +245,6 @@ video {
     padding: .7rem 2em;
     border-radius: .5rem;
     border: none;
-    /* margin-top: 3rem; */
 }
 
 
@@ -374,7 +373,7 @@ video {
 
 .content4-image {
     background: linear-gradient(rgba(56, 102, 183, 0.8), rgba(113, 161, 244,0.7)),
-    url("https://tse4.mm.bing.net/th?id=OIP.gCzXM_tn6YriK_LO7sh9tAHaE8&pid=Api&P=0&h=180") center/cover no-repeat;
+    url("/images/content4.jpg") center/cover no-repeat;
 }
 
 .content4 {
@@ -413,7 +412,7 @@ video {
  
 .contact-hero {
     background: linear-gradient(rgba(37, 222, 182, 0.5), rgba(218, 71, 18, 0.3)),
-    url("https://tse3.mm.bing.net/th?id=OIP.zZz72mPv-zsOXn2tY85VQAHaEK&pid=Api&P=0&h=180") top/cover no-repeat;
+    url("/images/contact-hero.jpg") top/cover no-repeat;
     height: 100vh;
     background-attachment: fixed; 
 }   
@@ -456,7 +455,7 @@ video {
 
 .form-bg {
     background: linear-gradient(rgba(128, 130, 129, 0.5), rgba(125, 145, 105, 0.3)),
-    url("https://tse1.mm.bing.net/th?id=OIP.seQGDfWLH_8rm7Uwr0JS9wHaE7&pid=Api&P=0&h=180") right/cover no-repeat;
+    url("/images/form-bg.jpg") right/cover no-repeat;
 }
 
 .form {
@@ -468,7 +467,6 @@ video {
     flex-direction: column;
     gap: 1rem;
     max-width: 500px;
-    /* position: relative; */
 }
 
 .form .tittle {
@@ -646,7 +644,7 @@ footer {
 
 .Doctors-hero {
     background: linear-gradient(rgba(37, 222, 182, 0.5), rgba(218, 71, 18, 0.3)),
-    url("https://tse2.mm.bing.net/th?id=OIP.pVHhseocEPrphqzYcnIuMQHaDV&pid=Api&P=0&h=180") top/cover no-repeat;
+    url("/images/doctors.jpg") top/cover no-repeat;
     height: 100vh;
     background-attachment: fixed; 
 } 
@@ -701,7 +699,7 @@ footer {
 
 .about-hero {
     background: linear-gradient(rgba(161, 200, 33, 0.5), rgba(53, 177, 222, 0.3)),
-    url("https://tse1.mm.bing.net/th?id=OIP.ci5gQD7xgOkGCrq7Ldf01AHaE7&pid=Api&P=0&h=180") top/cover no-repeat;
+    url("/images/About.jpg") top/cover no-repeat;
     height: 100vh;
     background-attachment: fixed; 
 } 
@@ -743,7 +741,7 @@ footer {
 
 .about-bg {
     background: linear-gradient(rgba(15, 16, 72, 0.5), rgba(35, 13, 133, 0.3)),
-    url("https://tse1.mm.bing.net/th?id=OIP.sGkvsSn3lf-Sgw7nHHuBJwHaEK&pid=Api&P=0&h=180") top /cover no-repeat;
+    url("/images/about-bg.jpg") top /cover no-repeat;
     width: 90%;
     height: 100%;
     padding: 5rem;
