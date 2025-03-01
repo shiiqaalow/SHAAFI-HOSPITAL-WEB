@@ -409,6 +409,17 @@ video {
     margin-block: 4rem;
 }
 
+.home-bg .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+
 
 .home-content  {
     display: flex;
@@ -421,10 +432,12 @@ video {
 .services {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
     text-align: center;
     padding: 2rem 1rem;
-    margin-top: 10rem;
+    margin-top: 2rem;
     border: 1px solid #fff;
     border-radius: 1rem;
     height: 50vh; 
@@ -435,8 +448,9 @@ video {
 }
 
 
-.services span {
-    font-size: 1rem;
+.heading span {
+    margin-top: 3rem;
+    font-size: 1.5rem;
 }
 
                     /*Contact page  */
@@ -924,6 +938,24 @@ footer {
         align-items: center;
         text-align: center;
     }
+    .home-bg {
+        height: auto;
+    }
+
+    .home-bg .heading {
+        font-size: 1rem;
+    }
+
+    .home-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+
 
     iframe {
         width: 100%;
@@ -1032,6 +1064,13 @@ footer {
     .contact-info {
       margin: 0 3rem;
     }
+
+    
+    .services {
+        height: 100%;
+        width: 80%;
+    }
+
 
     .form-info {
         display: flex;
