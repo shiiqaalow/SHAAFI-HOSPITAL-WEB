@@ -1093,6 +1093,10 @@ footer {
         width: 100%;
     }
 
+    .about-grid2 {
+        grid-template-columns: 1fr 1fr;
+    }
+   
     .department-container {
         grid-template-columns: 1fr 1fr;
     }
@@ -1106,8 +1110,9 @@ footer {
     .department-container {
         grid-template-columns: 1fr;
     } 
-}
 
+
+}
 /* Mobile reponsive */
 
 @media  (max-width: 480px) {
@@ -1160,6 +1165,26 @@ footer {
     .services {
         height: 100%;
         width: 80%;
+    }
+
+    .about :nth-child(2){
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+
+    .about-bg2 .heading {
+        font-size: 1.3rem;
+    }
+
+    .about-grid2 {
+        grid-template-columns: 1fr;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
     }
 
 
